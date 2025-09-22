@@ -26,40 +26,104 @@ button:hover {
   background-color: #005f99;
 }
 
-/*Nav bar style*/
-
+/* ----- Navbar styles ----- */
 .NavigationBar {
   background-color: #007acc;
   padding: 10px 20px;
-
 }
+
 .NavigationBar .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.NavigationBar .logo{
 
-color: white;
-font-weight: bold;
-font-size: 1.2em;
-text-decoration: none;
-
+.NavigationBar .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
 }
-.NavigationBar .nav-links{
+
+.NavigationBar .nav-links {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-
 }
-.NavigationBar .nav-links li{
+
+.NavigationBar .nav-links li {
   margin-left: 20px;
 }
+
 .NavigationBar .nav-links a {
   color: white;
   text-decoration: none;
 }
-.NavigationBar .nav-links a:hover{
+
+.NavigationBar .nav-links a:hover {
   text-decoration: underline;
+}
+
+/* ----- Sticky footer + layout ----- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/* ----- Footer styles ----- */
+.site-footer {
+  background: #0a2540; /* dark, high contrast */
+  color: #ffffff;
+  margin-top: 24px;
+  padding: 24px 16px;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.footer-brand .tagline {
+  margin: 4px 0 0 0;
+  opacity: 0.9;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-nav a:hover,
+.footer-nav a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.footer-legal {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* 2-column on medium screens, tidy alignment on large */
+@media (min-width: 640px) {
+  .footer-inner {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .footer-legal {
+    grid-column: 1 / -1;
+  }
 }
