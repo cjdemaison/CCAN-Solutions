@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CCAN Solutions Collaborative Website</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h1>Welcome to Our Collaborative Website!</h1>
-  <p>This is the starting point for our GitHub project.</p>
+<body class="page">
+  <main>
+    <h1>Welcome to Our Collaborative Website!</h1>
+    <p>This is the starting point for our GitHub project.</p>
 
-  <button id="clickMe">Click Me</button>
-  <p id="output"></p>
+    <button id="clickMe">Click Me</button>
+    <p id="output">X</p>
+  </main>
+
+  <!-- Accessible, responsive footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>CCAN Solutions</strong>
+        <p class="tagline">Student collaborative project</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-legal">
+        <span>© <span id="year"></span> CCAN Solutions. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
