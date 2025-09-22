@@ -25,3 +25,41 @@ button {
 button:hover {
   background-color: #005f99;
 }
+
+/*Nav bar style*/
+
+.NavigationBar {
+  background-color: #007acc;
+  padding: 10px 20px;
+
+}
+.NavigationBar .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavigationBar .logo{
+
+color: white;
+font-weight: bold;
+font-size: 1.2em;
+text-decoration: none;
+
+}
+.NavigationBar .nav-links{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+.NavigationBar .nav-links li{
+  margin-left: 20px;
+}
+.NavigationBar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.NavigationBar .nav-links a:hover{
+  text-decoration: underline;
+}
