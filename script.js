@@ -4,7 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const button = document.getElementById("clickMe");
   const output = document.getElementById("output");
 
-  button.addEventListener("click", () => {
-    output.textContent = "Button clicked! 🚀";
-  });
+  if (button && output) {
+    button.addEventListener("click", () => {
+      output.textContent = "Button clicked! 🚀";
+    });
+  }
+
+  // Footer dynamic year
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
